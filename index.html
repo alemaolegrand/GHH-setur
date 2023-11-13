@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+    <section class="home">
+        <div class="nav">
+            <div class="nav-container">
+                <img src="/images/logo.svg" width="80px" />
+                <img src="/images/menu.svg" width="20px" />
+            </div>
+
+        </div>
+
+        <div class="video-container">
+            <video width="100%" controls muted>
+                <source src="/images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="home-content">
+            <div class="home-content-container">
+                <h1>
+                    Descubra o seu refúgio eco-friendly no Green Horizon Hotel
+                </h1>
+
+                <p>
+                    Onde o luxo encontra a sustentabilidade em harmonia
+                </p>
+
+                <div class="btn-row">
+                    <a href="#packs" class="packages-btn">
+                        Veja nossos pacotes
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="packages-sec" id="packs">
+        <div class="packs-container">
+            <div class="card">
+                <div class="room-img">
+                    <img src="/images/room1.png" width="100%" />
+                </div>
+                <div class="text">
+                    <div class="card-title">
+                        Pacote Basic Gold
+                    </div>
+                    <p>
+                        Oferecemos uma suíte aconchegante, com cama de casal e frigobar, ar condicionado e banheiro
+                        simples. Inclui Spa day e café da manhã.
+                    </p>
+                </div>
+
+                <div class="price-tag">
+                    R$350,00 <span>diária</span>
+                </div>
+
+                <div class="btn-row">
+                    <a href="#contato" class="packages-btn">
+                        RESERVAR
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="room-img">
+                    <img src="/images/room2.png" width="100%" />
+                </div>
+                <div class="text">
+                    <div class="card-title">
+                        Pacote Silver Deluxe
+                    </div>
+                    <p>
+                        Suíte contendo cama queen e frigobar, banheiro com duchas e pia duplas. Inclui Spa day, café da
+                        manhã + 1 refeição de sua preferência e open bar.
+                    </p>
+                </div>
+
+                <div class="price-tag">
+                    R$550,00 <span>diária</span>
+                </div>
+                <div class="btn-row">
+                    <a href="#contato" class="packages-btn">
+                        RESERVAR
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="room-img">
+                    <img src="/images/room3.png" width="100%" />
+                </div>
+                <div class="text">
+                    <div class="card-title">
+                        Pacote Premium
+                    </div>
+                    <p>
+                        Suíte com cama king, frigobar e ar condicionado, banheiro contendo hidromassagem e ducha dupla.
+                        Refeições all inclusive, Spa day e passeio à cavalo para o casal.
+                    </p>
+                </div>
+
+                <div class="price-tag">
+                    R$699,90 <span>diária</span>
+                </div>
+
+                <div class="btn-row">
+                    <a href="#contato" class="packages-btn">
+                        RESERVAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contato">
+        <div class="contact-container">
+
+            <p>Fale com um de nossos consultores e realize sua reserva agora!</p>
+
+            <a href="https://wa.me/5521995761235/" target="_blank" class="wpp-btn">
+                <img src="/images/whatsapp.svg" />
+                <div>
+                    Garantir minha reserva.
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Mais informações
+        </div>
+        <p>
+            <strong>(21)2688-6576 </strong>
+        </p>
+        <div class="social">
+            <img src="/images/instagram.svg" width="20px" />
+            greenhorizonhotel
+        </div>
+
+        <div class="social">
+            <img src="/images/facebook.svg" width="20px" />
+            Green Horizon Hotel
+        </div>
+
+        <p class="sign">
+            Green Horizon Hotel @2023
+        </p>
+    </footer>
+</body>
+
+</html>
